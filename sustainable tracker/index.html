@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHabit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card">
+        <h2>Eco Habit</h2>
+        <div class="tree-wrapper">
+            <svg class="tree-svg" id="tree" viewBox="0 0 100 120">
+                <defs>
+                    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4ade80" stop-opacity="0.95"></stop>
+                        <stop offset="100%" stop-color="#15803d" stop-opacity="0.85"></stop>
+                    </linearGradient>
+                </defs>
+                <rect x="44" y="75" width="12" height="45" fill="#03045e" rx="3"></rect>
+              <circle cx="50" cy="50" r="28" fill="url(#leafGrad)"></circle>
+              <circle cx="30" cy="60" r="20" fill="url(#leafGrad)"></circle>
+              <circle cx="70" cy="60" r="20" fill="url(#leafGrad)"></circle>
+              <circle cx="50" cy="30" r="18" fill="url(#leafGrad)"></circle>
+            </svg>
+        </div>
+  
+
+    <div class="stats">
+        Energy: <span id="pts">0</span> | <span id="lvl">Sprout</span>
+    </div>
+
+    <div class="actions">
+        <button class="btn-positive" onclick="updateTree(10)">Recyle</button>
+        <button class="btn-positive" onclick="updateTree(15)">Save Water</button>
+        <button class="btn-positive" onclick="updateTree(20)">Bike</button>
+        <button class="btn-positive" onclick="updateTree(50)">Plant</button>
+        <button class="btn-negative" onclick="updateTree(-15)">Drive</button>
+        <button class="btn-negative" onclick="updateTree(-10)">Wast</button>
+    </div>
+
+      </div>
+    <script src="index.js"></script>
+</body>
+</html>
